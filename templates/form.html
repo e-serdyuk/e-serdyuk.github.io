@@ -1,0 +1,10 @@
+<form name="myForm" class="contacts" ng-submit="submit(myForm.$valid)">
+   <div><span class="error1"  ng-class="{'erroropacity' : myForm.input1.$valid==0, 'errornoopacity' : myForm.input1.$valid==1}">Enter valid name with english letters</span><br>
+      <span class="error2" ng-class="{'erroropacity' : myForm.input2.$valid==0, 'errornoopacity' : myForm.input2.$valid==1}">Enter valid email</span><br>
+      <span class="error3" ng-class="{'erroropacity' : myForm.input3.$valid==0, 'errornoopacity' : myForm.input3.$valid==1}">Enter the message with 20 characters</span>
+   </div>
+   <input name="input1" class="contacts_name" type="text" name="name" placeholder="Your name here" ng-model="newUser.name" ng-pattern="nameRegex" required>
+   <input name="input2" class="contacts_email" type="email" name="mail" placeholder="Your mail here" ng-model="newUser.email" ng-pattern="emailRegex" required>
+   <input name="input3" class="contacts_message" type="text" name="message" placeholder="Your message here" ng-model="newUser.message" ng-minlength="20" required>
+   <input class="contacts_submit" type="submit" name="" value="Send Message">
+</form>

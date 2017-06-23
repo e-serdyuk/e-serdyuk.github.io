@@ -1,0 +1,53 @@
+<header>
+   <div id="logo">
+      <a href="index.html"><img  src="images/logo.jpg" alt="logo"></a>
+   </div>
+   <div id="menu">
+      <nav class="menu">
+         <ul>
+            <li class="current-item"><a href="index.html" >Home</a></li>
+            <li><a href="index.html#services" >Services</a></li>
+            <li><a href="index.html#portfolio" >Portfolio</a></li>
+            <li><a href="index.html#whoweare" >About</a></li>
+            <li><a href="index.html#news" >News</a></li>
+            <li><a href="index.html#contacts" >Contact</a></li>
+         </ul>
+      </nav>
+   </div>
+   <button class="hamburger">&#9776;</button>
+   <button class="cross">&#735;</button>
+   <div class="menu_burg">
+      <ul>
+         <li class="current-item"><a href="index.html" >Home</a></li>
+         <li><a href="index.html#services" >Services</a></li>
+         <li><a href="index.html#portfolio" >Portfolio</a></li>
+         <li><a href="index.html#whoweare" >About</a></li>
+         <li><a href="index.html#news" >News</a></li>
+         <li><a href="index.html#contacts" >Contact</a></li>
+      </ul>
+   </div>
+</header>
+<div class=news>
+   <div class="new" >
+      <div class="news_date_detail">
+         <h2>News №: {{id}}</h2>
+         <h3>Date:</h3>
+         <p>{{items_new[id].day}}/{{items_new[id].month}}/{{items_new[id].year}}</p>
+      </div>
+      <div class="news_text_detail">
+         <h3>Text:</h3>
+         <p>{{items_new[id].text}}</p>
+      </div>
+   </div>
+</div>
+<div class="address">
+   <div class="div_address">
+      <p>Awesome Address 432</p>
+      <p>ourmail@sometype.com</p>
+      <p>+321(0)32 123 343 492</p>
+   </div>
+</div>
+<footer class="rights">
+   <img ng-click="scroll('top')" src="images/tothetop.png">	
+   <p> © 2014 - <span>Kat</span> All Right Reserved</p>
+</footer>
