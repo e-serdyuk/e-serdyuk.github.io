@@ -30288,7 +30288,7 @@ var App = function (_React$Component) {
                     null,
                     React.createElement(
                       Link,
-                      { to: 'search', spy: true, smooth: true, duration: 1500 },
+                      { to: 'search', spy: true, smooth: true, offset: -100, duration: 1500 },
                       'Search'
                     )
                   ),
@@ -30925,7 +30925,7 @@ var reducer = function reducer() {
                var arr = [nData[getRandomArbitrary(0, 5)], nData[getRandomArbitrary(0, 5)], nData[getRandomArbitrary(0, 5)]];
                if (arr[0] !== arr[1] && arr[0] !== arr[2] && arr[1] !== arr[2]) n = 1;
             }
-
+            console.log(arr);
             return _extends({}, state, { blogsToShow: arr });
             break;
          }
