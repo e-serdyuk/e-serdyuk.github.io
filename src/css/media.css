@@ -104,6 +104,10 @@
         width: 15%;
         margin-right: 1%;
     }
+    .modal_login {
+        left: 15%;
+        right: 15%;
+    }
     .parallax {
         width: 70%;
     }
@@ -236,6 +240,9 @@
         font-size: 14px;
         text-transform: uppercase;
     }
+    .modal {
+    top: 200px;
+}
 }
 @media only screen and (max-width: 842px) {
     .happy_story {
@@ -403,6 +410,10 @@
     }
     .happy_story_text2 {
         width: 92%;
+    }
+        .modal_login {
+        left: 8%;
+        right: 8%;
     }
 
 
